@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.all {
+    width: 100%;
+    height: 790px;
+    background: url("../img/bg1.jpg") no-repeat;
+}
+
+.chat_index {
+    width: 900px;
+    height: 600px;
+    border: 1px solid black;
+    position: relative;
+    top: 40px;
+    margin: 0 auto;
+}
+
+input#chat {
+    width: 900px;
+    height: 30px;
+}
+
+#console-container {
+    width: 95%;
+    height: 500px;
+}
+
+#console {
+    border: 1px solid #CCCCCC;
+    border-right-color: #999999;
+    border-bottom-color: #999999;
+    color: #396e82;
+    height: 400px;
+    overflow-y: scroll;
+    padding: 20px;
+    width: 100%;
+}
+
+#console p {
+    padding: 0;
+    margin: 0;
+}
+
+#tips{
+    color: #97a8bf;
+    font-size: 14px;
+}
