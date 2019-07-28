@@ -25,6 +25,6 @@
  - 交互式输出数据
  - 输出服务器响应的数据
 3. **技术**
-服务器：ChatWebSocket 类
-客户端：index.jsp
-JKD8、Maven 、数据源 管理
+ - 服务器：ChatWebSocket 类
+ - 客户端：index.jsp
+ - JKD8、Maven 、数据源 管理
