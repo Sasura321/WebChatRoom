@@ -27,7 +27,7 @@
     <label class="lbl-3"></label>
   </div>
   <div class="clear"> </div>
-  <div class="avtar"><img src="<%=path%>/source/img/avtar.png" /></div>
+  <div class="avtar"><img src="<%=path%>/source/img/wei.jpg" /></div>
   <form id="login-form" action="<%=path%>/login" method="post">
     <div class="key">
       <input type="text" id="username" name="userid" placeholder="请输入账号" >
