@@ -16,8 +16,10 @@ import java.sql.*;
  */
 @WebServlet("/login")
 public class LoginServlet extends HttpServlet {
-    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        try{
+    protected void doGet(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException {
+
+        try {
             response.setContentType("text/html,charset=utf-8");
             PrintWriter out=response.getWriter();
             String userid = request.getParameter("userid");
@@ -46,12 +48,14 @@ public class LoginServlet extends HttpServlet {
                 request.setAttribute("userid",userid);
                 response.sendRedirect("../view/index.jsp");
             }
-        } catch(SQLException | ClassNotFoundException e){
+
+        } catch(SQLException | ClassNotFoundException e) {
             e.printStackTrace();
         }
     }
 
-    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    protected void doPost(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException {
         doGet(request, response);
     }
 }

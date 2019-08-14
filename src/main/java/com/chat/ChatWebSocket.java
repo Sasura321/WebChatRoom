@@ -106,7 +106,7 @@ public class ChatWebSocket {
         for (ChatWebSocket client : connections) {
             try {
                 // 只对指定的用户发消息
-                if(arr[1].equals(client.nickname) || nickName.equals(client.nickname)){
+                if(arr[1].equals(client.nickname) || nickName.equals(client.nickname)) {
                     synchronized (client) {
                         // 发送消息
                         client.session.getBasicRemote().sendText(arr[0]);
@@ -145,6 +145,7 @@ public class ChatWebSocket {
     private static void failInSend(ChatWebSocket client) {
         System.out.println("错误:向客户端发送消息失败");
         connections.remove(client);
+
         try {
             // 关闭连接
             client.session.close();
@@ -194,4 +195,5 @@ public class ChatWebSocket {
             }
         }
     }
+
 }
